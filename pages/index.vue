@@ -1,13 +1,12 @@
 <template>
     <div>
         <p class="mt-7 text-6xl border-b-2 mb-4 pb-2">HOME</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eveniet recusandae eligendi, ipsam cupiditate repellat. Eius nostrum, totam nisi perspiciatis consequuntur mollitia tempora molestiae, nam facilis rerum accusamus libero esse.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eveniet recusandae eligendi, ipsam cupiditate repellat. Eius nostrum, totam nisi perspiciatis consequuntur mollitia tempora molestiae, nam facilis rerum accusamus libero esse.</p>
+        <p>{{ data.home }}</p>
     </div>
 </template>
 
 <script setup>
-
+    const { data } = await useFetch('/api/ninja?name=Souvik')
 </script>
 
 <style scoped>
