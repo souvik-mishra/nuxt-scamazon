@@ -15,7 +15,7 @@ export const useTextStore = defineStore('text', {
     // },
     actions:{
         async getText(){
-            const data = await $fetch('http://hipsum.co/api/?type=hipster-centric&sentences=30')
+            const data = await $fetch('https://hipsum.co/api/?type=hipster-centric&sentences=30')
             this.quote = data[0]
         },
         async getContact(){
